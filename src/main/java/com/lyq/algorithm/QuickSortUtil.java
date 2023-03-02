@@ -39,7 +39,6 @@ public class QuickSortUtil {
         }
         array[j] = current;
 
-
         quickSort(array, start, j - 1);
         quickSort(array, j + 1, end);
     }
@@ -56,7 +55,7 @@ public class QuickSortUtil {
             swap(arr, right, mid);
         }
         // 枢纽值被放在序列末尾
-        swap(arr, right - 1, mid);
+        swap(arr, left, mid);
     }
 
     public static void swap(int[] array, int i, int j) {
