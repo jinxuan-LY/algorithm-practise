@@ -54,7 +54,7 @@ public class QuickSortUtil {
         if (arr[right] < arr[mid]) {
             swap(arr, right, mid);
         }
-        // 枢纽值被放在序列末尾
+        // 枢纽值被放在序列头部
         swap(arr, left, mid);
     }
 
